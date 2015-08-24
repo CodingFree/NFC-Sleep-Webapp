@@ -1,0 +1,211 @@
+/* ----------------------------------
+ * HEADERS: default
+ * ---------------------------------- */
+section[role="region"] > header:first-child {
+  position: relative;
+  z-index: 10;
+  padding: 0;
+  height: 5rem;
+  color: #fff;
+  background: url("http://www.codingfree.com/test/style/headers/images/ui/header.png") repeat-x 0 0;
+  background-size: auto 100%;
+  border: none;
+}
+
+section[role="region"] > header:first-child:after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: url("http://www.codingfree.com/test/style/headers/images/ui/shadow.png") repeat-x 0 0;
+  background-size: auto 100%;
+}
+
+section[role="region"] > header:first-child h1 {
+  font: 2.5rem/4.8rem "MozTT", Sans-serif;
+  text-align: left;
+  color: #fff;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display: block;
+  overflow: hidden;
+  margin: 0 0 0 3rem;
+  height: 100%
+}
+
+section[role="region"] > header:first-child h1 em {
+  font: 400 1.5rem/1em "MozTT", Sans-serif;
+}
+
+section[role="region"] > header:first-child form {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  padding: 1rem 1rem 0 0.5rem ;
+  margin-left: 2.5rem;
+}
+
+section[role="region"] > header:first-child input[type="text"] {
+  width: 100%;
+  height: 3rem;
+  -moz-box-sizing: border-box;
+  padding: 0 0.8rem;
+  border: solid 0.1rem #9d4123;
+  border-top-color: #a6501e;
+  border-radius: 0.3rem;
+  background: #fff url("http://www.codingfree.com/test/style/headers/images/ui/shadow.png") repeat-x left -0.1rem;
+  font: 1.5rem/3em "MozTT", Sans-serif;
+  box-shadow: none;
+}
+
+section[role="region"] > header:first-child form button[type="reset"] {
+  font-size: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  bottom: 0;
+  width: 3rem;
+  height: auto;
+  margin: 0;
+  display: none;
+  border: none;
+  background: url("http://www.codingfree.com/test/style/headers/images/icons/clear.png") no-repeat center center;
+}
+
+section[role="region"] > header:first-child input[type="text"]:valid + button[type="reset"] {
+  display: block;
+}
+
+/* Generic set of actions in toolbar */
+section[role="region"] > header:first-child menu[type="toolbar"] {
+  height: 100%;
+  float: right;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] a,
+section[role="region"] > header:first-child menu[type="toolbar"] button {
+  height: 5rem;
+  min-width: 5rem;
+  width: auto;
+  margin-bottom: 0;
+  border-radius: 0;
+  line-height: 5rem;
+  float: left;
+  background: none;
+  padding: 0 1.75rem;
+  -moz-box-sizing: border-box;
+  text-align: center;
+  text-shadow: none;
+  position: relative;
+  z-index: 5;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] a:last-child,
+section[role="region"] > header:first-child menu[type="toolbar"] button:last-child {
+  background: url("http://www.codingfree.com/test/style/headers/images/ui/separator.png") no-repeat left center;
+  margin-left: -0.2rem;
+  z-index: 1;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] {
+  padding: 0;
+  margin: 0;
+}
+
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button {
+  border: none;
+  background: none;
+  padding: 0;
+  overflow: hidden;
+  font: 400 1.5rem/1.1em "MozTT", Sans-serif;
+  color: #fff;
+  border-radius: 0;
+  text-decoration: none;
+}
+
+
+/* Pressed state */
+section[role="region"] > header:first-child a::-moz-focus-inner,
+section[role="region"] > header:first-child button::-moz-focus-inner,
+section[role="region"] > header:first-child a:active,
+section[role="region"] > header:first-child button:active,
+section[role="region"] > header:first-child a:focus,
+section[role="region"] > header:first-child button:focus {
+  outline: none !important;
+  border: none !important;
+}
+
+section[role="region"] > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):active,
+section[role="region"] > header:first-child menu[type="toolbar"] button:not(:disabled):active  {
+  background: #008aaa !important;
+  transition: background 0.2s ease;
+  border-bottom: solid 0.1rem rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Disabled state */
+section[role="region"] > header:first-child menu[type="toolbar"] a[aria-disabled="true"],
+section[role="region"] > header:first-child menu[type="toolbar"] button[disabled]  {
+  opacity: 0.5;
+}
+
+section[role="region"] > header:first-child a:first-letter,
+section[role="region"] > header:first-child button:first-letter {
+  text-transform: uppercase;
+}
+
+/* Icon definitions */
+
+/* Navigation links (back, cancel, etc) */
+section[role="region"] > header:first-child > button,
+section[role="region"] > header:first-child > a {
+  position: absolute;
+  left: 0;
+  width: 5rem;
+  height: 5rem;
+  background: url("http://www.codingfree.com/test/style/headers/images/ui/separator-large.png") no-repeat 2rem center;
+  overflow: hidden;
+}
+
+section[role="region"] > header:first-child > button::-moz-focus-inner { 
+  border: 0;
+  padding: 0;
+}
+
+/* ----------------------------------
+ * HEADERS: subheader
+ * ---------------------------------- */
+
+section[role="region"] > header {
+  background: url("http://www.codingfree.com/test/style/headers/images/ui/subheader.png") repeat left bottom;
+  border-bottom: solid 0.1rem #e6e6e6;
+  z-index: 0;
+  padding: 0.4rem 0;
+  height: auto;
+  color: #424242;
+}
+
+section[role="region"] > header:after {
+  display: none;
+}
+
+/* ----------------------------------
+ * HEADERS: dark
+ * ---------------------------------- */
+
+/* Navigation links (back, cancel, etc) */
+
+/* ----------------------------------
+ * HEADERS: organic
+ * ---------------------------------- */
+
+/* Navigation links (back, cancel, etc) */
+
+/* ----------------------------------
+ * HEADERS: right-to-left tweaks
+ * ---------------------------------- */
+

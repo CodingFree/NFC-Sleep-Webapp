@@ -1,0 +1,45 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-size: 1.8em;
+}
+
+h1{
+  font-size: 1.7em;
+}
+
+body {
+  height: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+section[role="region"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #fff;
+}
+
+[data-type="list"] li > a aside img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+[data-type="list"] li > a aside img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 1rem 1rem 0;
+}
+
+
+[data-type="list"] li > a aside.pack-end.install {
+  background: url("/style/images/download.png") no-repeat;
+  height: 3rem;
+  width: 3rem;
+  margin: 1.5rem 0 0 1rem;
+}

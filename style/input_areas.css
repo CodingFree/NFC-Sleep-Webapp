@@ -1,0 +1,23 @@
+/* ----------------------------------
+* Input areas
+* ---------------------------------- */
+
+/* fix for required inputs with wrong or empty value e.g. [type=email] */
+
+/* Fieldset */
+
+/* Tidy (search/submit) */
+
+section[role="region"] > header:first-child + form[role="search"] {
+  /* increase height when underneath a header because of header's shadow */
+  padding-top: 0.3rem;
+  border-bottom: 0.1rem solid #c8c8c8;
+}
+
+section[role="region"] > header:first-child + form[role="search"]:after{
+  background: none;
+}
+
+/******************************************************************************
+ * Right-to-Left layout
+ */
